@@ -1,0 +1,132 @@
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 50px);
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    margin: 0rem;
+    background-color: var(--neutral-000);
+}
+
+/*========== NAVIGATION BAR ==========*/
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid var(--neutral-100);
+    background-color: var(--neutral-000);
+    transition: 0.5s;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--neutral-600);
+    text-decoration: none;
+    transition: 0.6s;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: var(--neutral-200);
+    border-radius: 10px;
+    color: var(--neutral-900);
+}
+
+/*========== FOOTER ==========*/
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--neutral-100);
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.footer-contact {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 1.25rem;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-icon {
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-links {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footer-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--neutral-900);
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0;
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: var(--indigo-900);
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--neutral-500);
+    margin: 0;
+    padding: 0;
+}
+
+.footer-note {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--neutral-400);
+    margin: 0;
+    padding: 0;
+}
