@@ -6,8 +6,41 @@ html {
 
 body {
     font-family: "Figtree", sans-serif;
-    margin: 0rem;
+    margin: 0;
+    padding: 0;
     background-color: var(--neutral-000);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.65rem;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0rem;
 }
 
 /*========== NAVIGATION BAR ==========*/
@@ -20,6 +53,8 @@ header {
     border-bottom: 1px solid var(--neutral-100);
     background-color: var(--neutral-000);
     transition: 0.5s;
+    margin: 0;
+    margin-top: 0;
 }
 
 .nav-container {
@@ -27,7 +62,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0.5rem 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .nav-menu {
@@ -115,6 +150,13 @@ header {
     color: var(--indigo-900);
 }
 
+.footer-link:focus-visible {
+    outline: 1px solid var(--indigo-900);
+    color: var(--indigo-900);
+    border-radius: 10px;
+    padding: 0 0.2rem;
+}
+
 .footer-text {
     display: flex;
     flex-direction: column;
@@ -150,12 +192,13 @@ code {
     background-color: var(--neutral-100);
     padding: 0.5rem;
     display: block;
+    border-radius: 10px;
+    color: var(--neutral-600);
+    font-size: 0.9rem;
 }
 
 .element {
-    padding: 1rem 0 2rem
-        /* top, right/left, bottom */
-    ;
+    padding: 1rem 0 2rem; /* top, right/left, bottom */
     border-top-width: 0.075rem;
     border-top-style: solid;
     border-top-color: var(--neutral-200);
@@ -165,6 +208,10 @@ code {
     margin-bottom: 0.5rem;
 }
 
+#hero nav p {
+    margin-bottom: 2rem;
+}
+
 section nav a {
     padding: 0.5rem;
     background-color: var(--bg);
@@ -172,6 +219,7 @@ section nav a {
     text-decoration: none;
     transition: background-color 0.25s, color 0.25s;
     outline: 1px solid var(--neutral-200);
+    border-radius: 10px;
 }
 
 section nav a:hover,
@@ -218,182 +266,90 @@ a:focus-visible {
     INTERACTIVE ELEMENTS
   */
 
-a {
-    color: var(--interactive);
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-p>a {
-    color: var(--text);
-}
-
-a.primary {
-    display: inline-block;
-    text-align: center;
-    width: fit-content;
-}
-
-a.primary {
-    padding: 0.5rem 1rem;
+.primary-btn {
+    padding: 0.6rem 1rem;
+    background-color: var(--neutral-900);
+    color: var(--neutral-000);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    outline: none;
     text-decoration: none;
+    transition: 0.5s;
+}
+.primary-btn:hover, .primary-btn:focus {
+    background-color: var(--neutral-600);
 }
 
-a.primary {
-    background-color: var(--interactive);
-    transition: background-color 0.25s;
-    color: white;
+.secondary-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--neutral-000);
+    color: var(--neutral-600);
+    outline: solid 1px var(--neutral-200);
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
 }
 
-a.primary:hover {
-    background-color: var(--text);
+.secondary-btn:hover, .secondary-btn:focus {
+    background-color: var(--neutral-200);
 }
 
-.image-link>img,
-.product-listing>img {
-    max-width: 20rem;
-    max-height: 20rem;
-}
-
-.image-link>img {
-    object-fit: cover;
-    transition: transform 0.2s;
-    vertical-align: bottom;
-    mix-blend-mode: multiply;
-}
-
-.image-link>img:hover {
-    transform: scale(1.05);
-}
-
-.text-link,
+.in-text-link,
 p>a {
-    color: black;
-    transition: color 0.25s;
+    color: var(--indigo-900);
+    transition: color 0.5s;
+    text-decoration: underline;
+    font-weight: 600;
 }
 
-.text-link:hover,
+.in-text-link:hover,
 p>a:hover {
-    color: var(--interactive);
+    color: var(--indigo-600);
+    text-decoration: underline;
 }
 
-.text-link:focus-visible,
+.in-text-link:focus-visible,
 p>a:focus-visible,
 .image-link:focus-visible {
     text-decoration: none;
-    outline: 2px solid var(--interactive);
-    border-radius: 0.25rem;
+    outline: 1px solid var(--indigo-900);
+    border-radius: 10px;
+    padding: 0 0.2rem;
 }
 
 /*
-    FORM
+    CONTENT
   */
 
-label,
-input,
-button,
-select,
-legend,
-textarea {
-    line-height: 1.2;
+.img-bio {
+    width: 15rem;
+    border-radius: 10px;
 }
 
-form {
-    width: 20em;
-    max-width: 90%;
-    margin: 0 auto;
-}
-
-input[type="text"],
-textarea {
-    border: none;
-    outline: 1px solid var(--border);
-    font-family: "Futura", Geneva, Tahoma, sans-serif;
+.img-case-study {
     width: 100%;
-    padding: 0.4rem;
-    transition: background-color 0.25s;
 }
 
-input[type="text"]:hover {
-    border: none;
-    background-color: var(--bg-tertiary);
-}
-
-input:focus-visible,
-textarea:focus-visible {
-    border: none;
-    background-color: var(--bg-tertiary);
-    outline: 2px solid var(--interactive);
-}
-
-form div {
-    margin-top: 1rem;
-}
-
-label {
-    margin-bottom: 0.4rem;
-    display: block;
+.img-case-study-half {
+    width: 50%;
 }
 
 /*
     COMBINED ELEMENTS
   */
 
-#main-nav {
-    background-color: var(--bg-secondary);
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    border-bottom: 1px solid var(--border);
-}
-
-#main-nav a {
-    text-decoration: none;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-#main-nav a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.375rem;
-    color: var(--interactive-hover);
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-}
-
-.logo>img {
-    min-height: 1.25rem;
-    height: 1.5rem;
-    width: auto;
-}
-
-.text-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.image-link>img {
-    width: 100%;
-}
-
-@media screen and (min-width: 42rem) {
-
-    #main-nav,
-    .links,
-    .text-links {
-        flex-direction: row;
-    }
-
-    #main-nav {
-        justify-content: space-between;
-    }
-}
+  .combined-element-container {
+    border-radius: 10px;
+    outline: 1px solid var(--neutral-200);
+    padding: 0.5rem 0rem;
+  }

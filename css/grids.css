@@ -1,36 +1,59 @@
 /* STYLE GUIDE NAVIGATION */
+
+:root {
+  --main-margin-left: 10rem;
+  --main-margin-right: 10rem;
+}
+
 #guide-nav {
-    width: 100%;
-    text-align: center;
-    display: grid;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.element-main {
+  margin: 0 var(--main-margin-right) 0 var(--main-margin-left);
+}
+
+@media screen and (min-width: 0rem) {
+  .element-main {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 26rem) {
+  #guide-nav {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin-bottom: 2rem;
+    grid-template-rows: 1fr;
   }
-  
-  .buttons {
-    display: inline-flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+
+  .element-main {
+    margin: 0 5rem;
   }
-  
-  #imagery img {
-    width: 100%;
-    height: auto;
-    max-width: 40rem;
+}
+
+@media screen and (min-width: 42rem) {
+  #guide-nav {
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
   }
-  
-  
-  @media screen and (min-width: 26rem) {
-    #guide-nav {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-    }
+
+  .element-main {
+    margin: 0 10rem;
   }
-  
-  @media screen and (min-width: 63rem) {
-    #guide-nav {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: none;
-    }
+}
+
+@media screen and (min-width: 84rem) {
+  #guide-nav {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
   }
+
+  .element-main {
+    margin: 0 20rem;
+  }
+}
