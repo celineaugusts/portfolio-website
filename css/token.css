@@ -1,0 +1,43 @@
+:root {
+    /* BRAND COLORS */
+    --neutral-000: #FFFFFF;
+    --neutral-100: #F6F5F4;
+    --neutral-200: #DEDEDE;
+    --neutral-400: #B1B1B1;
+    --neutral-500: #838383;
+    --neutral-600: #4D4D4D;
+    --neutral-900: #181817;
+    --indigo-900: #4E48F6;
+  }
+
+  .color-neutral-900 {
+    background-color: var(--neutral-900);
+  }
+
+  .color-neutral-600 {
+    background-color: var(--neutral-600);
+  }
+
+  .color-neutral-500 {
+    background-color: var(--neutral-500);
+  }
+
+  .color-neutral-400 {
+    background-color: var(--neutral-400);
+  }
+
+  .color-neutral-200 {
+    background-color: var(--neutral-200);
+  }
+
+  .color-neutral-100 {
+    background-color: var(--neutral-100);
+  }
+
+  .color-neutral-000 {
+    background-color: var(--neutral-000);
+  }
+
+  .color-indigo-900 {
+    background-color: var(--indigo-900);
+  }
