@@ -353,3 +353,40 @@ p>a:focus-visible,
     outline: 1px solid var(--neutral-200);
     padding: 0.5rem 0rem;
   }
+
+  /*========== HOME PAGE ==========*/
+
+  /*
+    HERO
+  */
+
+  .hero-landing {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-landing-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    max-width: 32rem;
+  }
+
+  .hero-landing-container h1 {
+    margin-bottom: 0;
+  }
+
+  .hero-landing-container p {
+    font-size: 1.25rem;
+  }
+
+  .hero-landing-container small {
+    color: var(--neutral-500);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
