@@ -23,19 +23,241 @@
     <header class="header" id="header">
         <nav class="nav-container">
             <a href="index.html">
-                <img src="svg/logo.svg" alt="Illustration of a girl with long eyelashes next to the logo reading 'Celine'." />
+                <img src="svg/logo.svg"
+                    alt="Illustration of a girl with long eyelashes next to the logo reading 'Celine'." />
             </a>
 
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Work</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="style-guide.html" class="nav-link">Style Guide</a>
-                <a href="https://drive.google.com/file/d/12BGd-3busaURSIdYwJpiYL99F13Dfutx/view?usp=sharing" class="nav-link">Resume</a>
+                <a href="https://drive.google.com/file/d/12BGd-3busaURSIdYwJpiYL99F13Dfutx/view?usp=sharing"
+                    class="nav-link">Resume</a>
             </div>
         </nav>
     </header>
 
+    <!--==================== HERO SECTION ====================-->
+    <section id="hero">
+        <h1>Celine's Style Guide</h1>
+        <p>
+            This style library will be used as a guide to build the my portfolio
+            website.
+        </p>
+
+        <nav id="guide-nav" aria-labelledby="guide-nav">
+            <a href="#branding">Branding</a>
+            <a href="#interactive-elements">Interactive Elements</a>
+            <a href="#typography">Typography</a>
+            <a href="#combined-elements">Combined Elements</a>
+        </nav>
+    </section>
+
     <main class="main"></main>
+
+    <!--==================== ART DIRECTION ====================-->
+    <section id="branding">
+        <h2>Art Direction</h2>
+        <section class="element">
+            <h3>Colors</h3>
+
+            <h4>Neutral</h4>
+            <div class="color-palette">
+                <div class="color">
+                    <div class="color-neutral-900"></div>
+                    <small>#181817</small>
+                </div>
+                <div class="color">
+                    <div class="color-neutral-600"></div>
+                    <small>#4D4D4D</small>
+                </div>
+                <div class="color">
+                    <div class="color-neutral-500"></div>
+                    <small>#838383</small>
+                </div>
+                <div class="color">
+                    <div class="color-neutral-400"></div>
+                    <small>#B1B1B1</small>
+                </div>
+                <div class="color">
+                    <div class="color-neutral-200"></div>
+                    <small>#DEDEDE</small>
+                </div>
+                <div class="color">
+                    <div class="color-neutral-100"></div>
+                    <small>#F6F5F4</small>
+                </div>
+            </div>
+
+            <h4>Indigo</h4>
+            <div class="color-palette">
+                <div class="color">
+                    <div class="color-indigo-900"></div>
+                    <small>#4E48F6</small>
+                </div>
+            </div>
+        </section>
+
+        <section class="element">
+            <h3>Fonts</h3>
+            <h4>Figtree for Headings & Body Paragraph</h4>
+            <p>
+                Hello, I'm Celine! I am a UX designer and an illustrator who loves
+                creating innovative solutions that nurtures the human connection.
+            </p>
+        </section>
+
+
+        <section class="element">
+            <h3>Headings</h3>
+
+            <h4>CSS selectors:</h4>
+            <p>h1, h2, h3, h4, h5, h6</p>
+
+            <h4>Sample code:</h4>
+            <code>
+          &lt;h1&gt;h1. A Lecture Upon the Shadow&lt;/h1&gt;<br />
+          &lt;h2&gt;h2. A Valediction: Forbidding Mourning&lt;/h2&gt;<br />
+          &lt;h3&gt;h3. Air and Angels&lt;/h3&gt;<br />
+          &lt;h4&gt;h4. Elegy XVI: The Expostulation&lt;/h4&gt;<br />
+          &lt;h5&gt;h5. Fall of a Wall&lt;/h5&gt;<br />
+          &lt;h6&gt;h6. For whom the Bell Tolls&lt;/h6&gt;<br />
+        </code>
+
+            <h4>Rendered elements:</h4>
+            <div class="headings">
+                <h1>h1. A Lecture Upon the Shadow</h1>
+                <h2>h2. A Valediction: Forbidding Mourning</h2>
+                <h3>h3. Air and Angels</h3>
+                <h4>h4. Elegy XVI: The Expostulation</h4>
+                <h5>h5. Fall of a Wall</h5>
+                <h6>h6. For whom the Bell Tolls</h6>
+            </div>
+        </section>
+
+        <section class="element">
+            <h3>Paragraphs</h3>
+
+            <h4>CSS selectors:</h4>
+            <p>p</p>
+
+            <h4>Sample code:</h4>
+            <code>
+                &lt;p&gt;<br />
+                &nbsp;Twice or thrice had I lov'd thee, / Before I knew thy face or
+                name; / So in a voice, so in a shapeless flame / Angels affect us oft,
+                and worshipp'd be; / Still when, to where thou wert, I came, / Some
+                lovely glorious nothing I did see.<br />&lt;/p&gt;
+            </code>
+
+            <h4>Rendered element:</h4>
+            <p>
+                Twice or thrice had I lov'd thee, / Before I knew thy face or name; /
+                So in a voice, so in a shapeless flame / Angels affect us oft, and
+                worshipp'd be; / Still when, to where thou wert, I came, / Some lovely
+                glorious nothing I did see.
+            </p>
+        </section>
+
+        <section class="element">
+            <h3>Numbered Lists</h3>
+
+            <h4>CSS selectors:</h4>
+            <p>ol</p>
+
+            <h4>Sample code:</h4>
+            <code>
+                &lt;ol&gt;<br />
+                &nbsp;&lt;li&gt;Off the Beaten Track Soho Travel Journal&lt;/li&gt;<br />
+                &nbsp;&lt;li&gt;The Sun Rising Diary and Daily
+                Affirmations&nbsp;&lt;/li&gt;<br />
+                &nbsp;&lt;li&gt;The Good-Morrow Diary and Journal&lt;li&gt;<br />
+                &nbsp;&lt;li&gt;Say I Do Soho Wedding Planner&lt;/li&gt;<br />
+                &lt;/ol&gt;
+            </code>
+
+            <h4>Rendered element:</h4>
+            <ol>
+                <li>Off the Beaten Track Soho Travel Journal</li>
+                <li>The Sun Rising Diary and Daily Affirmations</li>
+                <li>The Good-Morrow Diary and Journal</li>
+                <li>Say I Do Soho Wedding Planner</li>
+            </ol>
+        </section>
+    </section>
+
+    <section id="interactive-elements">
+        <h2>Interactive Elements</h2>
+
+        <section class="element">
+            <h3>In-text Link</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.text-link</p>
+
+            <h4>Sample code:</h4>
+            <code>
+          &lt;p&gt;<br />
+          &nbsp;This is an &lt;a href="#" class="text-link"&gt;in-text
+          link&lt;/a&gt;.<br />
+          &lt;/p&gt;
+        </code>
+
+            <h4>Rendered element:</h4>
+            <p>
+                This is an
+                <a href="#" class="text-link">in-text link</a>.
+            </p>
+        </section>
+
+        <section class="element">
+            <h3>Button</h3>
+
+            <h4>CSS selectors:</h4>
+            <p>a.primary</p>
+
+            <h4>Sample code:</h4>
+            <code>
+          &lt;a href="#" class="primary"&gt;Primary button&lt;/a&gt;<br />
+        </code>
+
+            <h4>Rendered elements:</h4>
+            <div class="buttons">
+                <a href="#" class="primary">Primary button</a>
+            </div>
+        </section>
+    </section>
+
+    <section id="case-study">
+        <h2>Case Study</h2>
+    </section>
+
+    <section id="combined-elements">
+        <h2>Combined Elements</h2>
+
+        <section class="element">
+            <h3>Navigation</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.main-nav</p>
+
+            <h4>Rendered element:</h4>
+            <nav class="nav-container">
+                <a href="index.html">
+                    <img src="svg/logo.svg"
+                        alt="Illustration of a girl with long eyelashes next to the logo reading 'Celine'." />
+                </a>
+
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Work</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="style-guide.html" class="nav-link">Style Guide</a>
+                    <a href="https://drive.google.com/file/d/12BGd-3busaURSIdYwJpiYL99F13Dfutx/view?usp=sharing"
+                        class="nav-link">Resume</a>
+                </div>
+            </nav>
+        </section>
+    </section>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer-container">
@@ -55,7 +277,8 @@
                 <a href="index.html" class="footer-link">Work</a>
                 <a href="about.html" class="footer-link">About</a>
                 <a href="style-guide.html" class="footer-link">Style Guide</a>
-                <a href="https://drive.google.com/file/d/12BGd-3busaURSIdYwJpiYL99F13Dfutx/view?usp=sharing" class="footer-link">Resume</a>
+                <a href="https://drive.google.com/file/d/12BGd-3busaURSIdYwJpiYL99F13Dfutx/view?usp=sharing"
+                    class="footer-link">Resume</a>
             </div>
         </div>
         <div class="footer-text">
@@ -63,7 +286,8 @@
                 © 2024 Celine August Santoso. All Rights Reserved.
             </p>
             <p class="footer-note">
-                Designed with love and strawberry mochi yogurts (115% sugar, less ice).
+                Designed with love and strawberry mochi yogurts (115% sugar, less
+                ice).
             </p>
         </div>
     </footer>

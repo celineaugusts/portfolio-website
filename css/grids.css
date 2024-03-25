@@ -1,0 +1,36 @@
+/* STYLE GUIDE NAVIGATION */
+#guide-nav {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  #imagery img {
+    width: 100%;
+    height: auto;
+    max-width: 40rem;
+  }
+  
+  
+  @media screen and (min-width: 26rem) {
+    #guide-nav {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  
+  @media screen and (min-width: 63rem) {
+    #guide-nav {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: none;
+    }
+  }
