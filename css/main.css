@@ -34,6 +34,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -89,10 +90,12 @@ header {
 }
 
 .footer-links {
-    gap: 2rem;
+    gap: 1rem 2rem;
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-link {
@@ -102,6 +105,8 @@ header {
     text-decoration: none;
     transition: 0.3s;
     margin: 0;
+    align-self: center;
+    text-align: center;
 }
 
 .footer-link:hover, .footer-link:focus {
@@ -113,6 +118,8 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 0.25rem;
+    align-self: center;
+    text-align: center;
 }
 
 .footer-copyright {
@@ -121,6 +128,8 @@ header {
     color: var(--neutral-500);
     margin: 0;
     padding: 0;
+    align-self: center;
+    text-align: center;
 }
 
 .footer-note {
@@ -129,4 +138,6 @@ header {
     color: var(--neutral-400);
     margin: 0;
     padding: 0;
+    align-self: center;
+    text-align: center;
 }
