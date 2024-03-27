@@ -13,12 +13,24 @@
   margin: 0 20rem;
 }
 
+.hero-landing {
+  gap: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media screen and (min-width: 0rem) {
   .element-main {
     margin: 0 1rem;
   }
   .img-case-study-half {
     width: 100%;
+  }
+  .hero-landing {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -45,6 +57,12 @@
   
   .img-case-study-half {
     width: 50%;
+  }
+
+  
+  .hero-landing {
+    display: flex;
+    flex-direction: row;
   }
 }
 

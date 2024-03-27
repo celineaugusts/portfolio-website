@@ -356,16 +356,6 @@ p>a:focus-visible,
     HERO
   */
 
-  .hero-landing {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   .hero-landing-container {
     display: flex;
     flex-direction: column;
