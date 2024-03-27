@@ -17,8 +17,9 @@
   gap: 2rem;
   margin-bottom: 4rem;
   margin-top: 2rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 0rem) {
@@ -36,7 +37,7 @@
 
 @media screen and (min-width: 26rem) {
   #guide-nav {
-    grid-template-columns: 1frs;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 
@@ -52,14 +53,13 @@
   }
 
   .element-main {
-    margin: 0 10rem;
+    margin: 0 8rem;
   }
   
   .img-case-study-half {
     width: 50%;
   }
 
-  
   .hero-landing {
     display: flex;
     flex-direction: row;
@@ -71,6 +71,13 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
   }
+
+  .element-main {
+    margin: 0 12rem;
+  }
+}
+
+@media screen and (min-width: 98rem) {
 
   .element-main {
     margin: 0 20rem;
