@@ -15,8 +15,8 @@
 
 .hero-landing {
   gap: 2rem;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-bottom: 0;
+  margin-top: 4rem;
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,15 @@
   margin-bottom: 4rem;
   margin-top: 2rem;
 }
+
+.work-container {
+  border-radius: 2rem;
+  background-color: var(--neutral-100);
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+}
+
 
 @media screen and (min-width: 0rem) {
   .element-main {
@@ -51,6 +60,9 @@
   }
   .hero-story-container{
     margin: 0rem 0rem 4rem 0rem;
+  }
+  .work-container {
+    padding: 2rem 2rem 0 2rem;
   }
 }
 
@@ -96,6 +108,9 @@
   }
   .hero-story-container{
     margin: 0rem 0rem 0rem 0rem;
+  }
+  .work-container {
+    padding: 4rem 4rem 0 4rem;
   }
 }
 
