@@ -22,6 +22,14 @@
   align-items: center;
 }
 
+.hero-about {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 0rem) {
   .element-main {
     margin: 0 1rem;
@@ -32,6 +40,17 @@
   .hero-landing {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .hero-about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+  .hero-about-container {
+    margin: 4rem 0rem 0rem 0rem;
+  }
+  .hero-story-container{
+    margin: 0rem 0rem 4rem 0rem;
   }
 }
 
@@ -63,6 +82,20 @@
   .hero-landing {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 66rem) {
+  .hero-about {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .hero-about-container {
+    margin: 4rem 0rem;
+  }
+  .hero-story-container{
+    margin: 0rem 0rem 0rem 0rem;
   }
 }
 
