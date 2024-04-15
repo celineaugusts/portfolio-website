@@ -15,8 +15,8 @@
 
 .hero-landing {
   gap: 2rem;
-  margin-bottom: 4rem;
-  margin-top: 2rem;
+  margin-bottom: 0;
+  margin-top: 4rem;
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;

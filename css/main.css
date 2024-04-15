@@ -148,12 +148,12 @@ header {
 
 .footer-link:hover,
 .footer-link:focus {
-    color: var(--indigo-900);
+    color: var(--accent-900);
 }
 
 .footer-link:focus-visible {
-    outline: 1px solid var(--indigo-900);
-    color: var(--indigo-900);
+    outline: 1px solid var(--accent-900);
+    color: var(--accent-900);
     border-radius: 10px;
     padding: 0 0.2rem;
 }
@@ -230,11 +230,11 @@ nav a:focus {
 }
 
 section nav a:focus-visible {
-    outline: 1px solid var(--indigo-900);
+    outline: 1px solid var(--accent-900);
 }
 
 a:focus-visible {
-    outline: 1px solid var(--indigo-900);
+    outline: 1px solid var(--accent-900);
 }
 
 .color-palette {
@@ -305,7 +305,7 @@ a:focus-visible {
 
 .in-text-link,
 p>a {
-    color: var(--indigo-900);
+    color: var(--accent-900);
     transition: color 0.5s;
     text-decoration: underline;
     font-weight: 600;
@@ -313,7 +313,7 @@ p>a {
 
 .in-text-link:hover,
 p>a:hover {
-    color: var(--indigo-600);
+    color: var(--accent-600);
     text-decoration: underline;
 }
 
@@ -321,7 +321,7 @@ p>a:hover {
 p>a:focus-visible,
 .image-link:focus-visible {
     text-decoration: none;
-    outline: 1px solid var(--indigo-900);
+    outline: 1px solid var(--accent-900);
     border-radius: 10px;
     padding: 0 0.2rem;
 }
@@ -346,36 +346,70 @@ p>a:focus-visible,
 
 /* COMBINED ELEMENTS */
 
-  .combined-element-container {
+.combined-element-container {
     border-radius: 10px;
     outline: 1px solid var(--neutral-200);
     padding: 0.5rem 0rem;
-  }
+}
 
 /*========== HOME PAGE ==========*/
 
 /* HERO */
 
-  .hero-landing-container {
+.hero-landing-container {
     display: flex;
     flex-direction: column;
     gap: 0rem;
     max-width: 32rem;
-  }
+}
 
-  .hero-landing-container h1 {
+.hero-landing-container h1 {
     margin: 0;
-  }
+}
 
-  .hero-landing-container p {
+.hero-landing-container p {
     font-size: 1.25rem;
-  }
+}
 
-  .hero-landing-container small {
+.hero-landing-container small {
     color: var(--neutral-500);
     font-size: 1rem;
     margin-bottom: 2rem;
-  }
+}
+
+/* WORK */
+
+.work-section {
+    margin: 6rem 0;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-container {
+    border-radius: 2rem;
+    background-color: var(--neutral-100);
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 2rem;
+}
+
+.work-container h2 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+}
+
+.work-container span {
+    font-weight: 700;
+    color: var(--neutral-900);
+}
+
+.work-container p {
+    font-weight: 300;
+    color: var(--neutral-600);
+    padding: 0;
+    margin: 0;
+}
 
 /*========== ABOUT PAGE ==========*/
 
