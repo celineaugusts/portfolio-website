@@ -15,6 +15,7 @@ h1 {
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 0rem;
+    margin-top: 0rem;
 }
 
 h2 {
@@ -262,9 +263,7 @@ a:focus-visible {
     font-weight: 400;
 }
 
-/* 
-    INTERACTIVE ELEMENTS
-  */
+/* INTERACTIVE ELEMENTS */
 
 .btn-container {
     display: flex;
@@ -327,9 +326,7 @@ p>a:focus-visible,
     padding: 0 0.2rem;
 }
 
-/*
-    CONTENT
-  */
+/* CONTENT */
 
 .img-home {
     max-width: 100%;
@@ -337,17 +334,17 @@ p>a:focus-visible,
 }
 
 .img-bio {
-    width: 15rem;
-    border-radius: 10px;
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    filter: drop-shadow(0.5rem 0.5rem 10px var(--neutral-200));
 }
 
 .img-case-study {
     width: 100%;
 }
 
-/*
-    COMBINED ELEMENTS
-  */
+/* COMBINED ELEMENTS */
 
   .combined-element-container {
     border-radius: 10px;
@@ -355,11 +352,9 @@ p>a:focus-visible,
     padding: 0.5rem 0rem;
   }
 
-  /*========== HOME PAGE ==========*/
+/*========== HOME PAGE ==========*/
 
-  /*
-    HERO
-  */
+/* HERO */
 
   .hero-landing-container {
     display: flex;
@@ -381,3 +376,44 @@ p>a:focus-visible,
     font-size: 1rem;
     margin-bottom: 2rem;
   }
+
+/*========== ABOUT PAGE ==========*/
+
+/* HERO */
+
+.hero-about-text{
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.hero-story-text{
+    font-size: 1rem;
+}
+
+.hero-about h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.hero-about h2 {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.skills {
+    border-top: 1px solid var(--neutral-200);
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+
+.skills-container p {
+    margin: 0.5rem 0;
+    padding: 0;
+}
