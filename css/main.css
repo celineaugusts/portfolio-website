@@ -331,6 +331,11 @@ p>a:focus-visible,
     CONTENT
   */
 
+.img-home {
+    max-width: 100%;
+    height: auto;
+}
+
 .img-bio {
     width: 15rem;
     border-radius: 10px;
