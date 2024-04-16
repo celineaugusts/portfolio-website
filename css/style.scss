@@ -1,0 +1,187 @@
+// Define colors as variables
+$teal: #1A6B83;
+$orange: #E1715B;
+
+@mixin nav-display {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-container {
+    @include nav-display;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+
+.nav-menu {
+    @include nav-display;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@mixin footer-display($dir, $align, $num) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    gap: $num;
+}
+
+.footer-container {
+    @include footer-display(column, center, 1rem);
+    padding: 2rem 0;
+    border-top: 1px solid var(--neutral-100);
+}
+
+.footer-nav {
+    @include footer-display(column, center, 0.75rem);
+}
+
+.footer-contact {
+    @include footer-display(row, baseline, 1.25rem);
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links {
+    @include footer-display(row, center, 1rem 2rem);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-text {
+    @include footer-display(column, center, 0.25rem);
+    align-self: center;
+    text-align: center;
+}
+
+@mixin img {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+@mixin img-size($w) {
+    max-width: $w;
+    height: auto;    
+}
+
+.img-home {
+    @include img-size(100%);
+}
+
+.img-bio {
+    @include img-size(30%);
+    border-radius: 50%;
+    filter: drop-shadow(0.5rem 0.5rem 10px var(--neutral-200));
+}
+
+.img-case-study {
+    @include img-size(100%);
+}
+
+@mixin container-display($dir, $num) {
+    display: flex;
+    flex-direction: $dir;
+    gap: $num;
+}
+
+.hero-landing-container {
+    @include container-display(column, 0rem);
+    max-width: 32rem;
+}
+
+.work-section-container {
+    @include container-display(column, 6rem);
+    margin: 6rem 0;
+}
+
+.tag-container {
+    @include container-display(row, 0.8rem);
+    margin: 1.4rem 0rem 2.6rem 0rem;
+    flex-wrap: wrap;
+}
+
+.skills-container {
+    @include container-display(row, 0.75rem);
+}
+
+.sub-title-container {
+    @include container-display(row, 1rem);
+    align-items: baseline;
+}
+
+.insights-container {
+    @include container-display(column, 2rem);
+}
+
+@mixin content-img($height) {
+    width: 100%;
+    height: $height;
+    border-radius: 10px;
+}
+
+.grid-wrapper > div > img {
+    @include content-img(100%);
+    object-fit: cover;
+}
+
+.content-box > div > img {
+    @include content-img(auto);
+}
+
+.insights-container > img {
+    @include content-img(auto);
+}
+
+.ethnography-container > img {
+    @include content-img(auto);
+}
+
+@mixin custom-text ($size, $weight, $style, $color, $margin){
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    color: $color;
+    margin: $margin;
+    padding: 0;
+}
+
+.element-secondary h1 {
+    @include custom-text(3rem, 800, normal, $teal, 0 0 1rem 0);
+}
+
+.element-secondary h2 {
+    @include custom-text(2rem, 700, normal, $teal, 0 0 1rem 0);
+}
+
+.body {
+    @include custom-text(1rem, 400, normal, var(--neutral-600), 0);
+}
+
+.hook {
+    @include custom-text(1.2rem, 600, italic, var(--neutral-900), 0);
+}
+
+.sub-heading {
+    @include custom-text(1.1rem, 700, normal, $teal, 1.5rem 0 0.5rem 0);
+}
+
+.sub-title {
+    @include custom-text(1.1rem, 700, normal, var(--neutral-500), 1.5rem 0 1rem 0);
+}
+
+.problem-statement {
+    @include custom-text(1.2rem, 600, italic, $orange, 1.5rem 0 0 0);
+}
+
+.circle {
+    background-color: $orange;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin: 0;
+    pad: 0;
+}

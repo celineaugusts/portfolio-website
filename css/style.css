@@ -1,0 +1,305 @@
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 2rem;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--neutral-100);
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.img-home {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-bio {
+  max-width: 30%;
+  height: auto;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(0.5rem 0.5rem 10px var(--neutral-200));
+          filter: drop-shadow(0.5rem 0.5rem 10px var(--neutral-200));
+}
+
+.img-case-study {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-landing-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0rem;
+  max-width: 32rem;
+}
+
+.work-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 6rem;
+  margin: 6rem 0;
+}
+
+.tag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.8rem;
+  margin: 1.4rem 0rem 2.6rem 0rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.75rem;
+}
+
+.sub-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 1rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.insights-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-box > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.insights-container > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ethnography-container > img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.element-secondary h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: normal;
+  color: #1A6B83;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.element-secondary h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #1A6B83;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.body {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--neutral-600);
+  margin: 0;
+  padding: 0;
+}
+
+.hook {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--neutral-900);
+  margin: 0;
+  padding: 0;
+}
+
+.sub-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #1A6B83;
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--neutral-500);
+  margin: 1.5rem 0 1rem 0;
+  padding: 0;
+}
+
+.problem-statement {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #E1715B;
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+}
+
+.circle {
+  background-color: #E1715B;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin: 0;
+  pad: 0;
+}
