@@ -1,6 +1,8 @@
 // Define colors as variables
 $teal: #1A6B83;
 $orange: #E1715B;
+$fh-blue: #005293;
+$fh-orange: #E35205;
 
 @mixin nav-display {
     display: flex;
@@ -149,12 +151,20 @@ $orange: #E1715B;
     padding: 0;
 }
 
-.element-secondary h1 {
+.h1-reusables {
     @include custom-text(3rem, 800, normal, $teal, 0 0 1rem 0);
 }
 
-.element-secondary h2 {
+.h1-fh {
+    @include custom-text(3rem, 800, normal, $fh-blue, 0 0 1rem 0);
+}
+
+.h2-reusables {
     @include custom-text(2rem, 700, normal, $teal, 0 0 1rem 0);
+}
+
+.h2-fh {
+    @include custom-text(2rem, 700, normal, $fh-blue, 0 0 1rem 0);
 }
 
 .body {
@@ -165,8 +175,12 @@ $orange: #E1715B;
     @include custom-text(1.2rem, 600, italic, var(--neutral-900), 0);
 }
 
-.sub-heading {
+.sub-heading-reusables {
     @include custom-text(1.1rem, 700, normal, $teal, 1.5rem 0 0.5rem 0);
+}
+
+.sub-heading-fh {
+    @include custom-text(1.1rem, 700, normal, $fh-blue, 1.5rem 0 0.5rem 0);
 }
 
 .sub-title {
@@ -177,11 +191,19 @@ $orange: #E1715B;
     @include custom-text(1.2rem, 600, italic, $orange, 1.5rem 0 0 0);
 }
 
-.circle {
-    background-color: $orange;
+@mixin circle($color) {
+    background-color: $color;
     width: 0.75rem;
     height: 0.75rem;
     border-radius: 50%;
     margin: 0;
     pad: 0;
+}
+
+.circle-reusables {
+    @include circle($orange)
+}
+
+.circle-fh {
+    @include circle($fh-orange)
 }

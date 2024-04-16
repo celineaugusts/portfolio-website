@@ -232,7 +232,7 @@
   border-radius: 10px;
 }
 
-.element-secondary h1 {
+.h1-reusables {
   font-size: 3rem;
   font-weight: 800;
   font-style: normal;
@@ -241,11 +241,29 @@
   padding: 0;
 }
 
-.element-secondary h2 {
+.h1-fh {
+  font-size: 3rem;
+  font-weight: 800;
+  font-style: normal;
+  color: #005293;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.h2-reusables {
   font-size: 2rem;
   font-weight: 700;
   font-style: normal;
   color: #1A6B83;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+.h2-fh {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #005293;
   margin: 0 0 1rem 0;
   padding: 0;
 }
@@ -268,11 +286,20 @@
   padding: 0;
 }
 
-.sub-heading {
+.sub-heading-reusables {
   font-size: 1.1rem;
   font-weight: 700;
   font-style: normal;
   color: #1A6B83;
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.sub-heading-fh {
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #005293;
   margin: 1.5rem 0 0.5rem 0;
   padding: 0;
 }
@@ -295,8 +322,17 @@
   padding: 0;
 }
 
-.circle {
+.circle-reusables {
   background-color: #E1715B;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin: 0;
+  pad: 0;
+}
+
+.circle-fh {
+  background-color: #E35205;
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
