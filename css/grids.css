@@ -74,6 +74,11 @@
   gap: 4rem;
 }
 
+.ethnography-container {
+  display: grid;
+  gap: 4rem;
+}
+
 @media screen and (min-width: 0rem) {
   .element-main {
     margin: 0 1rem;
@@ -108,6 +113,9 @@
     justify-content: start;
   }
   .grid-overview {
+    grid-template-columns: 1fr;
+  }
+  .ethnography-container {
     grid-template-columns: 1fr;
   }
 }
@@ -172,6 +180,9 @@
   }
   .grid-overview {
     grid-template-columns: 2fr 1fr;
+  }
+  .ethnography-container {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

@@ -108,6 +108,38 @@ $orange: #E1715B;
     @include container-display(row, 0.75rem);
 }
 
+.sub-title-container {
+    @include container-display(row, 1rem);
+    align-items: baseline;
+}
+
+.insights-container {
+    @include container-display(column, 2rem);
+}
+
+@mixin content-img($height) {
+    width: 100%;
+    height: $height;
+    border-radius: 10px;
+}
+
+.grid-wrapper > div > img {
+    @include content-img(100%);
+    object-fit: cover;
+}
+
+.content-box > div > img {
+    @include content-img(auto);
+}
+
+.insights-container > img {
+    @include content-img(auto);
+}
+
+.ethnography-container > img {
+    @include content-img(auto);
+}
+
 @mixin custom-text ($size, $weight, $style, $color, $margin){
     font-size: $size;
     font-weight: $weight;
@@ -118,17 +150,38 @@ $orange: #E1715B;
 }
 
 .element-secondary h1 {
-    @include custom-text(3rem, 800, normal, $teal, 0 0 1rem 0)
+    @include custom-text(3rem, 800, normal, $teal, 0 0 1rem 0);
+}
+
+.element-secondary h2 {
+    @include custom-text(2rem, 700, normal, $teal, 0 0 1rem 0);
 }
 
 .body {
-    @include custom-text(1rem, 400, normal, var(--neutral-600), 0)
+    @include custom-text(1rem, 400, normal, var(--neutral-600), 0);
 }
 
 .hook {
-    @include custom-text(1.2rem, 600, italic, var(--neutral-900), 0)
+    @include custom-text(1.2rem, 600, italic, var(--neutral-900), 0);
 }
 
 .sub-heading {
-    @include custom-text(1rem, 700, normal, $teal, 1.5rem 0 0.5rem 0)
+    @include custom-text(1.1rem, 700, normal, $teal, 1.5rem 0 0.5rem 0);
+}
+
+.sub-title {
+    @include custom-text(1.1rem, 700, normal, var(--neutral-500), 1.5rem 0 1rem 0);
+}
+
+.problem-statement {
+    @include custom-text(1.2rem, 600, italic, $orange, 1.5rem 0 0 0);
+}
+
+.circle {
+    background-color: $orange;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    margin: 0;
+    pad: 0;
 }
