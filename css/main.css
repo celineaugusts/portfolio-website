@@ -409,3 +409,13 @@ p>a:focus-visible,
     margin: 0 0 4rem 0;
 }
 
+/*========== CITATION PAGE ==========*/
+
+.citation-box {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.citation-box h1 {
+    margin-bottom: 1rem;
+}
