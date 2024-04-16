@@ -120,6 +120,9 @@
   .ethnography-container {
     grid-template-columns: 1fr;
   }
+  .nav-container {
+    padding: 0.5rem 1rem;
+  }
 }
 
 @media screen and (min-width: 26rem) {
@@ -136,6 +139,9 @@
   .grid-wrapper {
     margin: 2rem 2rem 4rem 2rem;
     grid-gap: 2rem;
+  }  
+  .nav-container {
+    padding: 0.5rem 2rem;
   }
 }
 
