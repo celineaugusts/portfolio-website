@@ -75,6 +75,10 @@ header {
     color: var(--neutral-900);
 }
 
+nav > h1 {
+    margin-top: 4rem;
+}
+
 /*========== FOOTER ==========*/
 
 .footer-icon {
@@ -404,3 +408,4 @@ p>a:focus-visible,
 .content-box {
     margin: 0 0 4rem 0;
 }
+
